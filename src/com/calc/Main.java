@@ -1,8 +1,10 @@
 package com.calc;
 
-public class Main {
+import java.util.Scanner;
 
+public class Main {
     public static void main(String[] args) {
-	// write your code here
+        System.out.println("Введите выражение формата а+в");
+        CalculateProgram.calculate(new Scanner(System.in).nextLine());
     }
 }
