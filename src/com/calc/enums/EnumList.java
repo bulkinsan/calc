@@ -99,7 +99,7 @@ public enum EnumList {
         switch (Character.toString(ch)) {
             case "V":
                 if (valueStringLength < index) {
-                    if ("I".equals(chars[index - 1])) {
+                    if ("I".equals(Character.toString(chars[index - 1]))) {
                         newValue = +3;
                     }
                     newValue = +5;
@@ -112,7 +112,7 @@ public enum EnumList {
                 break;
             case "X":
                 if (0 < index) {
-                    if ("I".equals(chars[index - 1])) {
+                    if ("I".equals(Character.toString(chars[index - 1]))) {
                         newValue = +8;
                     } else {
                         newValue = +10;
